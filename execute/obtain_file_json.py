@@ -179,7 +179,7 @@ def generate_json(key, data_file, subdirectory_path):
 def create_subdirectories_from_dict_keys(dictionary):
     file_paths = {}
     name = dictionary.get("tags")[0].get("name")
-    check_and_create_directory(name)
+    # check_and_create_directory(name)
     try:
         file_paths = dictionary.get("paths")
     except Exception as e:
